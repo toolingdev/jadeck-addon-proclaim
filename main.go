@@ -1,11 +1,11 @@
-// Proclaim: a PTZ controller add-on. Next / previous, go to a service
+// Proclaim: a jadeck add-on. Next / previous, go to a service
 // item, blank, and what's on air, over Proclaim's network control.
 package main
 
 import (
 	"encoding/json"
 
-	"github.com/toolingdev/ptz-controller/sdk/addon"
+	"github.com/toolingdev/jadeck/sdk/addon"
 )
 
 // Version is set by the release build.
@@ -31,7 +31,7 @@ var (
 func spec() addon.Spec {
 	return addon.Spec{
 		Manifest: addon.Manifest{
-			ID: "proclaim", Name: "Proclaim", Version: Version, Publisher: "PTZ Controller", APIVersion: addon.APIVersion, Repo: "toolingdev/ptz-addon-proclaim",
+			ID: "proclaim", Name: "Proclaim", Version: Version, Publisher: "jadeck", APIVersion: addon.APIVersion, Repo: "toolingdev/jadeck-addon-proclaim",
 			Description: "Next / previous, go to a service item, blank, and see what's on air.",
 			Reaches:     "The Proclaim PCs you add as connections (Proclaim's network control, port 52195)",
 			ConnectionTypes: []addon.ConnectionType{{

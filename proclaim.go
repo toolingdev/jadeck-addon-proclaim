@@ -25,7 +25,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/toolingdev/ptz-controller/sdk/addon"
+	"github.com/toolingdev/jadeck/sdk/addon"
 )
 
 const Port = 52195
