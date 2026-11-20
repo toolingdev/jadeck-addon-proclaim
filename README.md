@@ -1,5 +1,9 @@
 # Proclaim — PTZ controller add-on
 
+Next / previous, go to a service item, blank, and see what's on air.
+
+Install: it ships with the controller (Settings → Add-ons); newer releases of this repository arrive as updates there.
+
 Build every platform and the `.ptzaddon` package:
 
 ```bash
