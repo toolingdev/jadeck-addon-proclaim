@@ -8,7 +8,8 @@ import (
 
 func TestOverThePipe(t *testing.T) {
 	h := addontest.Start(t, spec())
-	h.Open("p", "proclaim", map[string]any{"host": "127.0.0.1"})
+	// TEST-NET address: nothing answers, so the status loop never reaches a real Proclaim.
+	h.Open("p", "proclaim", map[string]any{"host": "192.0.2.1"})
 	var acts []string
 	h.Call("p", "slides.actions", nil, &acts)
 	if len(acts) != 5 {

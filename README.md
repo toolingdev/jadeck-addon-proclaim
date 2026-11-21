@@ -2,6 +2,20 @@
 
 Next / previous, go to a service item, blank, and see what's on air.
 
+## Quick setup
+
+1. In Proclaim: **Settings → Remote → Local Server → Enable** (port 52195).
+2. On another PC, note the **Network Control Password** on the same page
+   (not needed when jadeck runs on the Proclaim PC).
+3. In jadeck: Settings → Connections → Add → Proclaim.
+4. Open the **Proclaim PC address** list: Proclaim PCs on this computer's
+   networks are found in a few seconds ("192.168.1.20 — Proclaim on
+   office-pc (on air: no)"). Pick one, or type the address (Tailscale and
+   VPN addresses are not scanned).
+5. Enter the password, then press **Test**: it answers in one line, and
+   says what to change if something is off (for example "In Proclaim:
+   Settings → Remote → Local Server → Enable").
+
 Install: it ships with the controller (Settings → Add-ons); newer releases of this repository arrive as updates there.
 
 Build every platform and the `.ptzaddon` package:
