@@ -179,7 +179,7 @@ func spec() addon.Spec {
 			},
 			Widgets: []addon.WidgetDef{
 				{Kind: "core", Type: "slides.prevnext", Label: "Prev / Next", Sample: sampleSlides},
-				{Kind: "status", Type: "on_air", Label: "On air", Description: "On air light with the current item and slide.",
+				{Kind: "status", Type: "on_air", Label: "On air", Description: "Whether Proclaim is on air (its slides output), not the stream: ON AIR with the current item and slide, OFF AIR otherwise.",
 					Bind: map[string]any{"on": "onAir", "title": "itemTitle", "slide": "slide", "slides": "slides"}, Sample: sampleState},
 				{Kind: "list", Type: "service_items", Label: "Service items", Description: "The service's items; tap one to go there.",
 					Bind: map[string]any{"items": "items", "current": "currentIndex", "action": "go_to_item"}, Sample: sampleState},
